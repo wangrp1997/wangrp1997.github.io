@@ -62,13 +62,13 @@ body {
 /* 项目容器样式 */
 .project-item {
     display: flex;
-    align-items: flex-start; /* 确保子项顶部对齐 */
+    align-items: center; /* 确保子项顶部对齐 */
     margin-bottom: 30px; /* 每个项目的间距 */
 }
 
 /* 图片样式 */
 .project-img {
-    max-width: 150px; /* 固定图片宽度 */
+    max-width: 180px; /* 固定图片宽度 */
     height: auto; /* 按比例缩放 */
     margin-right: 20px; /* 图片和文字的间距 */
     align-self: center; /* 垂直居中图片 */
@@ -80,7 +80,8 @@ body {
 .project-info {
     display: flex;
     flex-direction: column; /* 垂直布局 */
-    justify-content: center; /* 文字垂直居中 */
+    justify-content: flex-start; /* 文字垂直居中 */
+    margin: 0; /* 移除多余间距 */
 }
 
 .project-title {
