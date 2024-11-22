@@ -44,7 +44,7 @@ body {
 
 .info p {
     font-size: 18px; /* 普通文字大小 */
-    margin: 20px 0; /* 调大段间距 */
+    margin: 19px 0; /* 调大段间距 */
 }
 
 /* 紧凑的段落样式：用于邮箱和地址 */
@@ -82,6 +82,7 @@ body {
     font-weight: bold; /* 加粗 */
     color: #0066cc; /* 蓝色标题 */
     text-decoration: none; /* 无下划线 */
+    margin: 10px 0; /* 上下间距设为10px */
 }
 
 .project-info p {
