@@ -88,7 +88,7 @@ body {
     font-weight: bold; /* 加粗 */
     color: #0066cc; /* 蓝色标题 */
     text-decoration: none; /* 无下划线 */
-    margin: 10px 0; /* 上下间距设为10px */
+    margin: 0; /* 上下间距设为10px */
 }
 
 .project-info p {
