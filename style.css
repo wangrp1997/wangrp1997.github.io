@@ -8,78 +8,95 @@ body {
     color: #333333;
 }
 
-/* 容器 */
+/* 页面容器 */
 .container {
-    max-width: 900px; /* 最大内容宽度 */
-    margin: 0 auto; /* 水平居中 */
-    padding: 50px 20px; /* 顶部和底部50px，两边20px留白 */
-    background-color: #ffffff; /* 确保背景为纯白 */
+    max-width: 1200px; /* 设置内容宽度 */
+    margin: 0 auto; /* 自动居中页面内容 */
+    padding: 40px 20px; /* 上下留白40px，左右20px留白 */
+    background-color: #ffffff;
 }
 
 /* 个人信息部分 */
 .personal-info {
     display: flex;
     align-items: center;
-    text-align: left;
     margin-bottom: 40px;
+    text-align: left; /* 保持文字左对齐 */
 }
 
 .profile-photo {
-    width: 220px; /* 固定宽度 */
-    height: auto; /* 保持宽高比 */
-    margin-right: 30px; /* 与文字的间距 */
-    border: 1px solid #ccc; /* 照片边框 */
+    max-width: 180px; /* 照片最大宽度 */
+    height: auto; /* 按比例缩放 */
+    margin-right: 20px; /* 照片右边空出间距 */
 }
 
 .info h1 {
-    margin: 0;
-    font-size: 32px; /* 增大姓名字体 */
+    font-size: 28px; /* 姓名字体更大 */
+    margin: 0 0 10px;
     font-weight: bold;
 }
 
 .info p {
-    margin: 10px 0;
-    font-size: 20px; /* 放大段落字体 */
+    font-size: 18px; /* 段落字体大小 */
+    margin: 5px 0;
+}
+
+/* 新闻动态部分 */
+.news h2 {
+    font-size: 24px; /* 动态标题字体大小 */
+    margin-bottom: 20px;
+}
+
+.news ul {
+    list-style-type: none; /* 移除默认列表样式 */
+    padding: 0;
+    margin: 0;
+}
+
+.news li {
+    font-size: 16px; /* 列表字体大小 */
+    margin-bottom: 10px;
+    color: #555555;
 }
 
 /* 项目部分 */
 .projects h2 {
-    font-size: 28px; /* 项目标题字体 */
+    font-size: 24px;
     margin-bottom: 20px;
-    text-align: left; /* 保持左对齐 */
 }
 
 .project-item {
     margin-bottom: 20px;
-    text-align: left; /* 保持左对齐 */
+    text-align: left;
 }
 
 .project-item h3 {
-    font-size: 22px; /* 项目子标题字体 */
+    font-size: 20px; /* 项目名称字体 */
     margin: 0;
 }
 
 .project-item p {
-    margin: 5px 0;
+    font-size: 16px; /* 项目描述字体 */
     color: #555555;
-    font-size: 18px; /* 增大字体 */
+    margin: 5px 0;
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
     .container {
-        padding: 20px; /* 更小屏幕时减少左右留白 */
+        max-width: 90%; /* 小屏幕时更窄的页面宽度 */
+        padding: 20px; /* 减小留白 */
     }
 
     .profile-photo {
-        width: 180px; /* 减小照片宽度 */
+        max-width: 120px; /* 缩小照片尺寸 */
     }
 
     .info h1 {
-        font-size: 28px; /* 调整标题字体大小 */
+        font-size: 24px; /* 小屏幕时字体缩小 */
     }
 
-    .info p, .projects h2, .project-item h3, .project-item p {
-        font-size: 16px; /* 调整文字字体 */
+    .info p, .projects h2, .project-item h3, .project-item p, .news li {
+        font-size: 14px; /* 小屏幕文字缩小 */
     }
 }
