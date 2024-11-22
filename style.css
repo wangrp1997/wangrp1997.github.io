@@ -59,22 +59,28 @@ body {
     color: #333; /* 深色字体 */
 }
 
+/* 项目容器样式 */
 .project-item {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px; /* 项目间距 */
+    align-items: flex-start; /* 确保子项顶部对齐 */
+    margin-bottom: 30px; /* 每个项目的间距 */
 }
 
+/* 图片样式 */
 .project-img {
-    max-width: 180px; /* 控制图片宽度 */
+    max-width: 150px; /* 固定图片宽度 */
     height: auto; /* 按比例缩放 */
-    margin-right: 20px; /* 图片与文本之间的间距 */
+    margin-right: 20px; /* 图片和文字的间距 */
+    align-self: center; /* 垂直居中图片 */
     border: 1px solid #ccc; /* 添加边框 */
-    border-radius: 4px; /* 圆角 */
+    border-radius: 4px; /* 圆角效果 */
 }
 
+/* 项目文字信息 */
 .project-info {
-    max-width: calc(100% - 170px); /* 限制文本最大宽度 */
+    display: flex;
+    flex-direction: column; /* 垂直布局 */
+    justify-content: center; /* 文字垂直居中 */
 }
 
 .project-title {
@@ -91,14 +97,14 @@ body {
     color: #333; /* 描述文字颜色 */
 }
 
-.project-link {
-    font-size: 14px; /* 链接字体大小 */
-    color: #0066cc; /* 链接颜色 */
-    text-decoration: none; /* 无下划线 */
+.project-link a {
+    font-size: 14px;
+    color: #0066cc; /* 超链接为蓝色 */
+    text-decoration: none; /* 去掉下划线 */
 }
 
-.project-link:hover {
-    text-decoration: underline; /* 鼠标悬停显示下划线 */
+.project-link a:hover {
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
 }
 
 /* 页脚部分 */
