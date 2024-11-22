@@ -1,7 +1,7 @@
 /* 全局样式 */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -23,10 +23,10 @@ body {
 }
 
 .profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 200px;
+    height: auto;
     margin-right: 20px;
+    border: 1px solid #ccc; /* 添加边框以增强视觉效果 */
 }
 
 .info {
@@ -35,17 +35,18 @@ body {
 
 .info h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 28px; /* 调整为更大的字体 */
     font-weight: bold;
 }
 
 .info p {
-    margin: 5px 0;
+    margin: 8px 0;
+    font-size: 18px; /* 增大段落字体 */
 }
 
 /* 项目部分 */
 .projects h2 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
@@ -54,13 +55,14 @@ body {
 }
 
 .project-item h3 {
-    font-size: 18px;
+    font-size: 20px;
     margin: 0;
 }
 
 .project-item p {
     margin: 5px 0;
     color: #555555;
+    font-size: 16px;
 }
 
 /* 响应式设计 */
