@@ -119,6 +119,17 @@ footer p {
     margin: 5px 0; /* 页脚段落间距 */
 }
 
+/* 链接默认样式 */
+a {
+    text-decoration: none; /* 默认无下划线 */
+    color: #0066cc; /* 链接颜色为蓝色 */
+}
+
+/* 鼠标悬停时显示下划线 */
+a:hover {
+    text-decoration: underline; /* 悬停时显示下划线 */
+}
+
 /* 响应式设计 */
 @media (max-width: 768px) {
     .container {
