@@ -15,6 +15,13 @@ body {
     padding: 40px 20px; /* 上下40px，两侧20px */
 }
 
+/* 分割线样式 */
+.section-divider {
+    border: none;
+    border-top: 1px solid #cccccc; /* 灰色分割线 */
+    margin: 40px 0; /* 上下40px的间距 */
+}
+
 /* 个人信息部分 */
 .personal-info {
     display: flex;
