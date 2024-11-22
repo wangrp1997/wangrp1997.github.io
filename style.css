@@ -1,89 +1,80 @@
-/* Reset styles */
-body, h1, h2, p, ul, li, a {
-  margin: 0;
-  padding: 0;
-  font-family: 'Times New Roman', Times, serif;
-  color: #000; /* 纯黑色文字 */
-}
-
 body {
-  line-height: 1.8;
-  background-color: #fff; /* 纯白背景 */
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
 }
 
-/* Header styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .header {
-  text-align: center;
-  margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.header .profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* 圆形头像 */
-  object-fit: cover; /* 确保图片裁剪不变形 */
-  margin-bottom: 20px;
+.header-content {
+    flex: 1;
+    min-width: 300px;
 }
 
-.header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  font-weight: bold;
+.name {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
-.header p {
-  font-size: 1.2rem;
-  color: #333; /* 深灰色次要信息 */
+.position {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 0;
 }
 
-/* Section styles */
-.section {
-  margin-bottom: 40px;
+.description, .research-focus, .contact, .email, .address {
+    margin: 10px 0;
+    line-height: 1.6;
 }
 
-.section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #000;
-  border-bottom: 1px solid #000; /* 黑色分割线 */
-  padding-bottom: 5px;
+.profile-picture {
+    flex: 0 0 150px;
+    margin-left: 20px;
 }
 
-.section p {
-  font-size: 1rem;
-  margin-bottom: 10px;
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.section ul {
-  list-style: disc;
-  margin-left: 20px;
+.projects {
+    margin-top: 40px;
 }
 
-.section ul li {
-  margin-bottom: 8px;
-  line-height: 1.6;
+.projects h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
-/* Footer styles */
-.footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #333; /* 深灰色次要信息 */
-  margin-top: 40px;
-  border-top: 1px solid #000; /* 黑色分割线 */
-  padding-top: 10px;
+.projects ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Links */
-a {
-  color: #000; /* 黑色链接 */
-  text-decoration: none;
-  font-weight: bold;
+.projects li {
+    margin-bottom: 20px;
 }
 
-a:hover {
-  text-decoration: underline;
+.projects h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
 }
