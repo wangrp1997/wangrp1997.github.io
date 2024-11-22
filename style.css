@@ -1,80 +1,76 @@
+/* 全局样式 */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
     color: #333333;
 }
 
+/* 容器 */
 .container {
-    max-width: 800px;
+    width: 80%;
     margin: 0 auto;
     padding: 20px;
 }
 
-.header {
+/* 个人信息部分 */
+.personal-info {
     display: flex;
-    flex-wrap: wrap;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
-.header-content {
-    flex: 1;
-    min-width: 300px;
-}
-
-.name {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-.position {
-    font-size: 1.2em;
-    color: #555;
-    margin-top: 0;
-}
-
-.description, .research-focus, .contact, .email, .address {
-    margin: 10px 0;
-    line-height: 1.6;
-}
-
-.profile-picture {
-    flex: 0 0 150px;
-    margin-left: 20px;
-}
-
-.profile-picture img {
+.profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    object-fit: cover;
+    margin-right: 20px;
 }
 
-.projects {
-    margin-top: 40px;
+.info {
+    max-width: 600px;
 }
 
+.info h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+/* 项目部分 */
 .projects h2 {
-    font-size: 1.5em;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
-.projects ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.projects li {
+.project-item {
     margin-bottom: 20px;
 }
 
-.projects h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
+.project-item h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.project-item p {
+    margin: 5px 0;
+    color: #555555;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .personal-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+    }
 }
