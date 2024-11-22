@@ -3,12 +3,12 @@ body, h1, h2, p, ul, li, a {
   margin: 0;
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
-  color: #333;
+  color: #000; /* 纯黑色文字 */
 }
 
 body {
   line-height: 1.8;
-  background-color: white;
+  background-color: #fff; /* 纯白背景 */
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
@@ -20,14 +20,23 @@ body {
   margin-bottom: 30px;
 }
 
+.header .profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* 圆形头像 */
+  object-fit: cover; /* 确保图片裁剪不变形 */
+  margin-bottom: 20px;
+}
+
 .header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .header p {
   font-size: 1.2rem;
-  color: #666;
+  color: #333; /* 深灰色次要信息 */
 }
 
 /* Section styles */
@@ -39,7 +48,7 @@ body {
   font-size: 1.8rem;
   margin-bottom: 15px;
   color: #000;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #000; /* 黑色分割线 */
   padding-bottom: 5px;
 }
 
@@ -55,22 +64,24 @@ body {
 
 .section ul li {
   margin-bottom: 8px;
+  line-height: 1.6;
 }
 
 /* Footer styles */
 .footer {
   text-align: center;
   font-size: 0.9rem;
-  color: #777;
+  color: #333; /* 深灰色次要信息 */
   margin-top: 40px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #000; /* 黑色分割线 */
   padding-top: 10px;
 }
 
 /* Links */
 a {
-  color: #007acc;
+  color: #000; /* 黑色链接 */
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
