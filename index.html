@@ -1,53 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <div class="header-content">
-                <h1 class="name">Your Name</h1>
-                <h2 class="position">Your Position and Institution</h2>
-                <p class="description">
-                    I am a Professor/Researcher in [Your Department] at [Your Institution]. 
-                    I received my PhD from [Your Alma Mater] in [Year]. During my PhD, 
-                    I was an exchange research student at [Exchange Institution(s)] from [Year-Year].
-                </p>
-                <p class="research-focus">
-                    My research focuses on [Your Research Focus]. 
-                    I have developed [Brief List of Achievements or Projects]. 
-                    Please visit my <a href="https://youtube.com" target="_blank">YouTube Channel</a> and 
-                    <a href="https://bilibili.com" target="_blank">Bilibili Channel</a> for videos.
-                </p>
-                <p class="contact">
-                    For prospective students: If you are interested in working with me as a 
-                    Master/PhD student or internship student, please feel free to contact me.
-                </p>
-                <p class="email">Email: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
-                <p class="address">Address: [Your Address]</p>
+        <!-- 个人信息 -->
+        <section class="personal-info">
+            <img src="photo.jpg" alt="个人照片" class="profile-photo">
+            <div class="info">
+                <h1>您的姓名</h1>
+                <p>学术头衔或职位，例如：博士生 / 研究员</p>
+                <p>邮箱: your_email@example.com</p>
+                <p>简介：用一两句话描述您的背景和研究兴趣。</p>
             </div>
-            <div class="profile-picture">
-                <img src="your-photo.jpg" alt="Your Photo">
-            </div>
-        </header>
-        
+        </section>
+
+        <!-- 项目 -->
         <section class="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Project Title 1</h3>
-                    <p>Brief description of the project. Include goals, technologies used, and outcomes.</p>
-                </li>
-                <li>
-                    <h3>Project Title 2</h3>
-                    <p>Brief description of the project. Include goals, technologies used, and outcomes.</p>
-                </li>
-                <!-- Add more projects as needed -->
-            </ul>
+            <h2>项目</h2>
+            <div class="project-item">
+                <h3>项目名称 1</h3>
+                <p>项目描述：简短介绍这个项目的目标或功能。</p>
+            </div>
+            <div class="project-item">
+                <h3>项目名称 2</h3>
+                <p>项目描述：简短介绍这个项目的目标或功能。</p>
+            </div>
         </section>
     </div>
 </body>
