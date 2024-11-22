@@ -98,16 +98,6 @@ body {
     color: #333; /* 描述文字颜色 */
 }
 
-.project-link a {
-    font-size: 14px;
-    color: #0066cc; /* 超链接为蓝色 */
-    text-decoration: none; /* 去掉下划线 */
-}
-
-.project-link a:hover {
-    text-decoration: underline; /* 鼠标悬停时显示下划线 */
-}
-
 /* 页脚部分 */
 footer {
     text-align: center;
