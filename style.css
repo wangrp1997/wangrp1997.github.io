@@ -1,0 +1,108 @@
+/* Reset and global styles */
+body, h1, h2, p, a {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #007acc;
+  color: white;
+}
+
+.header .highlight {
+  color: #ffdd57;
+}
+
+.header nav {
+  margin-top: 20px;
+}
+
+.header nav a {
+  margin: 0 15px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Section styles */
+.section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #007acc;
+}
+
+/* Project grid */
+.project-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background: white;
+  width: 300px;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #007acc;
+}
+
+.project-card p {
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  font-weight: bold;
+}
+
+/* Contact section */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #005f99;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  color: #777;
+}
