@@ -47,10 +47,9 @@ body {
     margin: 20px 0; /* 调大段间距 */
 }
 
-/* 新闻动态部分 */
-.news h2 {
-    font-size: 24px; /* 动态标题字体大小 */
-    margin-bottom: 20px;
+/* 紧凑的段落样式：用于邮箱和地址 */
+.info p.compact {
+    margin: 5px 0; /* 紧凑的段落间距 */
 }
 
 .news ul {
