@@ -31,7 +31,7 @@ body {
 }
 
 .profile-photo {
-    max-width: 220px; /* 照片最大宽度 */
+    max-width: 180px; /* 照片最大宽度 */
     height: auto; /* 按比例缩放 */
     margin-right: 20px; /* 照片右侧留白 */
 }
