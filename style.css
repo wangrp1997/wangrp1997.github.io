@@ -10,41 +10,44 @@ body {
 
 /* 容器 */
 .container {
-    width: 80%;
-    margin: 0 auto;
+    max-width: 800px; /* 限制内容宽度 */
+    margin: 50px auto; /* 居中对齐 */
     padding: 20px;
+    background-color: #ffffff; /* 保持背景白色 */
 }
 
 /* 个人信息部分 */
 .personal-info {
     display: flex;
+    flex-direction: column; /* 垂直布局 */
     align-items: center;
+    text-align: center; /* 居中对齐文字 */
     margin-bottom: 40px;
 }
 
 .profile-photo {
     width: 200px;
     height: auto;
-    margin-right: 20px;
-    border: 1px solid #ccc; /* 添加边框以增强视觉效果 */
-}
-
-.info {
-    max-width: 600px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* 边框用于增强效果 */
 }
 
 .info h1 {
     margin: 0;
-    font-size: 28px; /* 调整为更大的字体 */
+    font-size: 28px; /* 增大字体 */
     font-weight: bold;
 }
 
 .info p {
     margin: 8px 0;
-    font-size: 18px; /* 增大段落字体 */
+    font-size: 18px;
 }
 
 /* 项目部分 */
+.projects {
+    text-align: center; /* 居中对齐项目文字 */
+}
+
 .projects h2 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -67,12 +70,19 @@ body {
 
 /* 响应式设计 */
 @media (max-width: 768px) {
-    .personal-info {
-        flex-direction: column;
-        align-items: flex-start;
+    .container {
+        padding: 10px;
     }
 
     .profile-photo {
-        margin-bottom: 20px;
+        width: 150px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    .info p, .projects h2, .project-item h3, .project-item p {
+        font-size: 16px;
     }
 }
