@@ -33,7 +33,7 @@ body {
 
 .photo-and-info {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px; /* 照片与文字的间距 */
 }
 
