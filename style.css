@@ -19,7 +19,7 @@ body {
 .section-divider {
     border: none;
     border-top: 1px solid #cccccc; /* 灰色分割线 */
-    margin: 40px 0; /* 上下40px的间距 */
+    margin: 10px 0; /* 上下40px的间距 */
 }
 
 /* 个人信息部分 */
@@ -31,19 +31,12 @@ body {
     text-align: left; /* 保持文字左对齐 */
 }
 
-.profile-container {
-    display: flex; /* 使用 Flexbox 布局 */
-    align-items: flex-start; /* 顶部对齐头像和文字 */
-    gap: 10px; /* 控制头像和文字的水平间距 */
-    margin-bottom: 20px; /* 与后续内容的间距 */
-}
-
 /* 头像部分 */
 .profile-photo {
+    float: right; /* 图片右浮动 */
     max-width: 140px; /* 照片最大宽度 */
     height: auto; /* 按比例缩放 */
-    margin-right: 10px; /* 照片右侧留白 */
-    flex-shrink: 0; /* 防止头像被压缩 */
+    margin: 0 0 10px 10px; /* 图片外边距：上0px，右0px，下10px，左20px */
 }
 
 /* 文字部分 */
@@ -142,15 +135,6 @@ a:hover {
     .container {
         max-width: 90%;
         padding: 20px;
-    }
-
-    .photo-and-info {
-        flex-direction: column; /* 小屏幕上改为上下布局 */
-        align-items: center;
-    }
-
-    .profile-photo {
-        max-width: 120px; /* 缩小照片尺寸 */
     }
 
     .info h1 {
