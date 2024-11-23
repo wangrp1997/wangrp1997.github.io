@@ -32,7 +32,7 @@ body {
 /* 头像样式 */
 .profile-photo {
     float: left; /* 使图片浮动到左侧 */
-    max-width: 140px; /* 图片宽度 */
+    max-width: 160px; /* 图片宽度 */
     margin: 0 20px 10px 0; /* 图片右侧和下方的间距 */
     border-radius: 5px; /* 添加圆角效果 */
 }
@@ -69,7 +69,7 @@ body {
 
 /* 图片样式 */
 .project-img {
-    max-width: 220px; /* 固定图片宽度 */
+    max-width: 240px; /* 固定图片宽度 */
     height: auto; /* 按比例缩放 */
     margin-right: 20px; /* 图片和文字的间距 */
     align-self: center; /* 垂直居中图片 */
