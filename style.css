@@ -25,9 +25,16 @@ body {
 /* 个人信息部分 */
 .personal-info {
     display: flex;
+    flex-wrap: wrap; /* 允许在小屏幕上换行 */
     align-items: center;
     margin-bottom: 40px;
     text-align: left; /* 保持文字左对齐 */
+}
+
+.photo-and-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* 照片与文字的间距 */
 }
 
 .profile-photo {
@@ -126,6 +133,11 @@ a:hover {
     .container {
         max-width: 90%;
         padding: 20px;
+    }
+
+    .photo-and-info {
+        flex-direction: column; /* 小屏幕上改为上下布局 */
+        align-items: center;
     }
 
     .profile-photo {
