@@ -24,25 +24,17 @@ body {
 
 /* 个人信息部分 */
 .personal-info {
-    display: flex;
-    flex-wrap: wrap; /* 允许在小屏幕上换行 */
-    align-items: center;
     margin-bottom: 40px;
-    text-align: left; /* 保持文字左对齐 */
+    line-height: 1.6; /* 文字行高 */
+    text-align: left;
 }
 
-/* 头像部分 */
+/* 头像样式 */
 .profile-photo {
-    float: right; /* 图片右浮动 */
-    max-width: 140px; /* 照片最大宽度 */
-    height: auto; /* 按比例缩放 */
-    margin: 0 0 10px 10px; /* 图片外边距：上0px，右0px，下10px，左20px */
-}
-
-/* 文字部分 */
-.info {
-    flex: 1; /* 占据剩余空间 */
-    max-width: calc(100% - 160px); /* 避免文字占据太多宽度 */
+    float: left; /* 使图片浮动到左侧 */
+    max-width: 120px; /* 图片宽度 */
+    margin: 0 20px 10px 0; /* 图片右侧和下方的间距 */
+    border-radius: 5px; /* 添加圆角效果 */
 }
 
 .info h1 {
@@ -136,7 +128,11 @@ a:hover {
         max-width: 90%;
         padding: 20px;
     }
-
+    .profile-photo {
+        float: none; /* 取消浮动 */
+        display: block;
+        margin: 0 auto 20px; /* 居中显示图片 */
+    }
     .info h1 {
         font-size: 24px; /* 小屏幕字体略小 */
     }
