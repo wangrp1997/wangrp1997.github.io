@@ -32,7 +32,7 @@ body {
 /* 头像样式 */
 .profile-photo {
     float: left; /* 使图片浮动到左侧 */
-    max-width: 120px; /* 图片宽度 */
+    max-width: 140px; /* 图片宽度 */
     margin: 0 20px 10px 0; /* 图片右侧和下方的间距 */
     border-radius: 5px; /* 添加圆角效果 */
 }
